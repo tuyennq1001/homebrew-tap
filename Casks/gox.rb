@@ -2,8 +2,7 @@ cask "gox" do
   version "1.0.11"
   sha256 "244f0e058403b6f91d448174cf9ff7fc03dd404ed5ca551fc8763c38d462eee1"
 
-  url "https://github.com/tuyennq1001/gox/releases/download/v#{version}/Gox.dmg",
-      verified: "github.com/tuyennq1001/gox/"
+  url "https://github.com/tuyennq1001/gox/releases/download/v#{version}/Gox.dmg"
   name "Gox"
   desc "Native Vietnamese & Japanese dual input engine for macOS (JIS keyboard ready)"
   homepage "https://tuyennq1001.github.io/gox/"
@@ -14,7 +13,7 @@ cask "gox" do
   end
 
   auto_updates true
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Gox.app"
 
